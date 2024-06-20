@@ -15,6 +15,16 @@ const Home: React.FC = () => {
 						Synonyms finder
 					</Link>
 				</li>
+				<li>
+					<Link className="underline" to={"/synonym-finder"}>
+						Sudoku Solver
+					</Link>
+				</li>
+				<li>
+					<Link className="underline" to={"/place-bubble"}>
+						Place Bubble
+					</Link>
+				</li>
 			</ul>
 		</div>
 	);

@@ -1,6 +1,7 @@
 import { RouteObject } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Synonyn from "./pages/Synonym/index.tsx";
+import PlaceBubble from "./pages/PlaceBubble/index.tsx";
 const Home = lazy(() => import("./pages/home"));
 const ColorGussing = lazy(() => import("./pages/ColorGussing/index.tsx"));
 
@@ -26,6 +27,14 @@ const routes = [
 		element: (
 			<Suspense fallback={<p>loading...</p>}>
 				<Synonyn />
+			</Suspense>
+		),
+	},
+	{
+		path: "/place-bubble",
+		element: (
+			<Suspense fallback={<p>loading...</p>}>
+				<PlaceBubble />
 			</Suspense>
 		),
 	},
