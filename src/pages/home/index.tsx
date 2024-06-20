@@ -25,6 +25,16 @@ const Home: React.FC = () => {
 						Place Bubble
 					</Link>
 				</li>
+				<li>
+					<Link className="underline" to={"/place-bubble"}>
+						NULL
+					</Link>
+				</li>
+				<li>
+					<Link className="underline" to={"/file-tree"}>
+						File tree
+					</Link>
+				</li>
 			</ul>
 		</div>
 	);
